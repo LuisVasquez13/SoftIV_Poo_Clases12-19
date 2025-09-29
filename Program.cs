@@ -2,7 +2,6 @@
 using System.Text;
 using SoftIV_Poo_Clases12_19;
 using SoftIV_Poo_Clases12_19.Clases; // Se usa para importar las clases SuperHeroe y SuperPoder
-
 var ImprimirInfo = new ImprimirInfo();
 
 // Instaciar las clases para los super poderes
@@ -60,6 +59,8 @@ string resultSalvarTierra = superman.SalvarLaTierra();
 Console.WriteLine(resultSalvarTierra);
 Console.WriteLine(); // Salto de linea
 
+
+
 var hulk = new SuperHeroe(); // Heroe 2
 hulk.Id = 2;
 hulk.Nombre = "Hulk";
@@ -79,7 +80,9 @@ string resultPoderesHulk = hulk.UsarSuperPoderes();
 Console.WriteLine(resultPoderesHulk); // Mostrar los poderes que usa con el metodo UsarSuperPoderes()
 Console.WriteLine(); // Salto de linea
 
-var wolverine = new AntiHeroe();
+
+
+var wolverine = new AntiHeroe(); // Antihéroe 1
 wolverine.Id = 5;
 wolverine.Nombre = "Wolverine";
 wolverine.IdentidadSecreta = "Logan";
@@ -101,6 +104,8 @@ Console.WriteLine(resultPoderesWolverine); // Mostrar los poderes que usa con el
 string accionWolverine = wolverine.RealizarAccionDeAntiHeroe("Atacar a la policia.");
 Console.WriteLine(accionWolverine); // Mostrar la accion del anti heroe
 Console.WriteLine(); // Salto de linea
+
+
 
 // Definicion del enum para los niveles de poder
 enum NivelPoder
